@@ -34,7 +34,7 @@
               <p>It then enters the waiting for remote signal state, it will wait for any valid remote signal from the universal remote controller. If it doesn’t it loops back into the state until a valid signal is received. Then the state switches to the picture taking state where it takes a picture of whatever the camera is pointed at. </p>
               <p>From the camera, the microcontroller must process the information and display it on the OLED screen. Then send the data from the CC3200 to the user’s email so the user can know the data on how dark/bright the room is, this stalls here until there is a valid wifi signal it can send the data through. </p>
               <p>Then it goes back to the waiting for the remote signal state where it will wait until the valid signal is given once again and start the picture taking process and data analysis is gone through again.</p>
-                <figure style="text-align: center; margin: 20px auto; max-width: 80%;">
+                <figure style="text-align: center; margin: 20px auto; max-width: 40%;">
                   <img src="hi.png" style="width: 100%; border-radius: 8px;">
                   <figcaption>
                     Figure 1: System State Machine
@@ -65,12 +65,13 @@
           <p>We could also get a better camera, and switch off of the bulky remote provided to us by having the camera be setup to take pictures periodically and when all of the people within the picture are smiling and have their eyes open, so it's a generally good photo, then the OLED would show that it was a good photo by pulling from the AWS shadow.</p>
           <p>The last future implementation would be to clean up the wiring, design a PCB, solder the board together and 3D print a box for it to make it look generally cleaner.</p>
       <h3>Bill of Materials</h3>
-            <figure style="text-align: center; margin: 20px auto; max-width: 80%;">
+            <figure style="text-align: center; margin: 20px auto; max-width: 65%;">
               <img src="screen.png" style="width: 100%; border-radius: 8px;">
               <figcaption>
                 Figure 1: Bill of Materials
               </figcaption>
             </figure>
+          <p>Total Project Cost Spent: $24.18 </p>
   </div>
 </body>
 </html>
