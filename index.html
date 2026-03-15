@@ -9,8 +9,8 @@
 </head>
 <body>
   <div style="max-width: 80%; margin: 0 auto; font-family: sans-serif; line-height: 1.6;">
-      <h1 style="; color: #2c3e50;">EEC 172: Smart Photo Assistant</h1>
-      <p>By: Tyler Wong and Yechan Hong</p>
+      <h1 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">EEC 172: Smart Photo Assistant</h1>
+      <p>    By: Tyler Wong and Yechan Hong</p>
       <h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">Demo Video</h2>
       <div align="center">
         <video width="50%" autoplay loop muted playsinline>
@@ -18,19 +18,10 @@
           Your browser does not support the video tag.
         </video>
       </div>
-      <h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">Project Description</h2>
-      <h3 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">Description</h3>
-      <h3 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">Design</h3>
-      <h3 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">Implementation</h3>
-      <h3 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">Challenges</h3>
-      <h3 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">Future Work</h3>
-      <h3 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">Bill of Materials</h3>
-      <div>
-        <p>For my final project I implemented the Smart Photo Assistant. It uses a remote to take a picture from a camera and sends information on how dark the picture is to your email. </p>
-      </div>
-      <div>
-        <p></p>
-      </div>
+      <h2 style="border-bottom: 2px solid #eee;">Project Description</h2>
+        <p>For this project, we designed and built an interactive embedded camera system that allows a user to remotely trigger an image capture, display the captured image locally, and send image analysis data to the cloud. The main idea of the system is to combine sensing, embedded processing, and cloud communication in a standalone device. 
+A user can press a button on a remote control to trigger the system. When the signal is received, the system captures an image using a camera module. The captured image is then displayed on an OLED screen so the user can see the result. 
+At the same time, the system performs a simple brightness analysis on the image by measuring how dark different parts of the image are. The brightness data is then sent to AWS through the CC3200 WiFi module. AWS processes the data and sends a notification email that contains the brightness values of different regions of the image.</p>
   </div>
 </body>
 </html>
